@@ -4,7 +4,7 @@
  */
 {
 	"$schema": "node_modules/wrangler/config-schema.json",
-	"name": "lucky-field-72ed",
+	"name": "cloudflare",
 	"main": "src/index.js",
 	"compatibility_date": "2025-10-23",
 	"observability": {
