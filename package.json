@@ -16,6 +16,7 @@
 	"dependencies": {
 		"@alicloud/dm20151123": "^1.7.0",
 		"@alicloud/openapi-client": "^0.4.15",
+		"bcryptjs": "^3.0.2",
 		"hono": "^4.10.2",
 		"jose": "^6.1.0",
 		"mailchannels": "^3.0.0",
