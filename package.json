@@ -14,6 +14,11 @@
 		"wrangler": "^4.44.0"
 	},
 	"dependencies": {
-		"hono": "^4.10.2"
+		"@alicloud/dm20151123": "^1.7.0",
+		"@alicloud/openapi-client": "^0.4.15",
+		"hono": "^4.10.2",
+		"jose": "^6.1.0",
+		"mailchannels": "^3.0.0",
+		"resend": "^6.2.2"
 	}
 }
