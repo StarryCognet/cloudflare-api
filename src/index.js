@@ -112,7 +112,7 @@ app.post('/api/login/code', async (c) => {
 		return c.json({ code: 400, message: '邮箱格式错误' }, 400);
 	}
 	const code = String(Math.random()).slice(-6); // 6 位数字
-	await sendCodeEmail(email, code, c.env); // 发信
+	await sendCodeEmail(email, code); // 发信
 	// 把 code 写入 D1 表 email_codes，5 min 后过期
 	const expire = Date.now() + 300_000;
 	await c.env.learn_db.prepare(`INSERT OR REPLACE INTO email_codes(email,code,expire_at) VALUES (?,?,?)`).bind(email, code, expire).run();

@@ -1,6 +1,6 @@
-export async function sendCodeEmail(to, code, env) {
-	const AccessKeyId = env.ALIYUN_ACCESS_KEY_ID;
-	const AccessKeySecret = env.ALIYUN_ACCESS_KEY_SECRET;
+export async function sendCodeEmail(to, code) {
+	const AccessKeyId = '';
+	const AccessKeySecret = '';
 
 	// 创建更美观的HTML邮件模板
 	const htmlBody = `
